@@ -1,0 +1,301 @@
+.availability-calendar td.regular .day {
+    align-items: center;
+    width: 100%;
+    position: unset;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .availability-calendar td.regular {
+    text-align: center;
+  }
+
+  .availability-calendar {
+    clear: both
+  }
+
+  .availability-calendar table {
+    display: inline-block !important;
+    margin-bottom: 28px;
+    border-collapse: collapse !important;
+    vertical-align: top
+  }
+
+  .availability-calendar table thead {
+    background: transparent !important;
+    color: #222 !important
+  }
+
+  .availability-calendar table th {
+    border: 0 !important;
+    padding: 8px 5px;
+    font-size: 12px;
+  }
+
+  .availability-calendar table td {
+    border: 0 !important;
+    padding: 0 !important;
+    min-width: 27px;
+    width: 32px;
+    height: 32px
+  }
+
+  .availability-calendar table td .day {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 1;
+    font-size: 12px
+  }
+
+  .availability-calendar .legend {
+    margin: 0 0 32px 0;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
+    list-style: none
+  }
+
+  .availability-calendar .legend:last-child {
+    margin: 0
+  }
+
+  .availability-calendar .legend li {
+    display: inline-block;
+    margin: 0 10px 10px 0px;
+    padding-left: 35px;
+    line-height: 16px;
+    text-align: left;
+    font-size: 10px;
+    vertical-align: top
+  }
+
+  .availability-calendar .legend li:last-child {
+    margin-right: 0
+  }
+
+  .availability-calendar .legend li.unavailable {
+    line-height: 30px
+  }
+
+  .availability-calendar .legend li:after {
+    content: ""
+  }
+
+  .availability-calendar .legend li .type {
+    display: block
+  }
+
+  .availability-calendar table td,
+  .availability-calendar .legend li {
+    position: relative
+  }
+
+  .availability-calendar table td:after,
+  .availability-calendar .legend li:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 32px solid transparent;
+    border-right: 34px solid transparent;
+    /*    right: 0px;*/
+  }
+
+  .availability-calendar table td:after {
+    right: 0;
+  }
+
+  .availability-calendar td.unavailable,
+  .availability-calendar td.unavailable-am,
+  .availability-calendar td.unavailable-pm,
+  .availability-calendar li.unavailable:after {
+    background-color: #f27a75
+  }
+
+  .availability-calendar td.regular,
+  .availability-calendar li.regular:after {
+    background-color: #f4f4f4
+  }
+
+  .availability-calendar td.special,
+  .availability-calendar li.special:after {
+    background-color: #4b49ad
+  }
+
+  .availability-calendar .regular-am:after {
+    border-top-color: #f4f4f4 !important;
+    content: ""
+  }
+
+  .availability-calendar .regular-pm:after {
+    border-right-color: #f4f4f4 !important;
+    content: ""
+  }
+
+  .availability-calendar .special-am:after {
+    border-top-color: #8fd66b !important;
+    content: ""
+  }
+
+  .availability-calendar .special-pm:after {
+    border-right-color: #8fd66b !important;
+    content: ""
+  }
+
+  .single-villa.availability-calendar {
+    text-align: center
+  }
+
+  .multi-villa.availability-calendar {
+    text-align: left
+  }
+
+  .multi-villa.availability-calendar table th.villa {
+    min-width: 152px;
+    width: 152px
+  }
+
+  .multi-villa.availability-calendar table tbody td.villa {
+    text-align: right !important
+  }
+
+  .multi-villa.availability-calendar table tbody td.villa a {
+    padding-right: 6px;
+    color: #0d6f3e !important;
+    text-decoration: none !important
+  }
+
+  .multi-villa.availability-calendar table tbody tr:hover td.villa {
+    background-color: #0d6f3e;
+    color: #fff
+  }
+
+  .multi-villa.availability-calendar table tbody tr:hover td.villa a {
+    color: #fff !important
+  }
+
+  @media only screen and (min-width: 485px) {
+    #page-content .single-villa.availability-calendar table:nth-child(odd) {
+      margin-left: 0
+    }
+  }
+
+  @media only screen and (min-width: 490px) {
+    #page-content .single-villa.availability-calendar table:nth-child(odd) {
+      margin-left: 5px
+    }
+  }
+
+  @media only screen and (min-width: 500px) {
+    #page-content .single-villa.availability-calendar table:nth-child(odd) {
+      margin-left: 15px
+    }
+  }
+
+  @media only screen and (min-width: 510px) {
+    #page-content .single-villa.availability-calendar table:nth-child(odd) {
+      margin-left: 25px
+    }
+  }
+
+  @media only screen and (min-width: 520px) {
+    #page-content .single-villa.availability-calendar table:nth-child(odd) {
+      margin-left: 35px
+    }
+  }
+
+  @media only screen and (min-width: 715px) {
+    #page-content .single-villa.availability-calendar table:nth-child(odd) {
+      margin-left: 0
+    }
+  }
+
+  @media only screen and (min-width: 725px) {
+    #page-content .single-villa.availability-calendar table:nth-child(3n) {
+      margin-left: 5px;
+      margin-right: 5px
+    }
+  }
+
+  @media only screen and (min-width: 745px) {
+    #page-content .single-villa.availability-calendar table:nth-child(3n) {
+      margin-left: 15px;
+      margin-right: 15px
+    }
+  }
+
+  @media only screen and (min-width: 765px) {
+    #page-content .single-villa.availability-calendar table:nth-child(3n) {
+      margin-left: 25px;
+      margin-right: 25px
+    }
+  }
+
+  @media only screen and (min-width: 785px) {
+    #page-content .single-villa.availability-calendar table:nth-child(3n) {
+      margin-left: 35px;
+      margin-right: 35px
+    }
+  }
+
+  @media only screen and (min-width: 940px) {
+    #page-content .single-villa.availability-calendar table:nth-child(3n) {
+      margin-left: 0;
+      margin-right: 0
+    }
+
+    #page-content .single-villa.availability-calendar table:nth-child(odd) {
+      margin-left: 35px
+    }
+  }
+
+  @media only screen and (min-width: 1080px) {
+    #page-content .single-villa.availability-calendar table:nth-child(odd) {
+      margin-left: 0
+    }
+  }
+
+  @media only screen and (min-width: 1095px) {
+    #page-content .single-villa.availability-calendar table:nth-child(3n) {
+      margin-left: 5px;
+      margin-right: 5px
+    }
+  }
+
+  @media only screen and (min-width: 1130px) {
+    #page-content .single-villa.availability-calendar table:nth-child(3n) {
+      margin-left: 15px;
+      margin-right: 15px
+    }
+  }
+
+  @media only screen and (min-width: 1160px) {
+    #page-content .single-villa.availability-calendar table:nth-child(3n) {
+      margin-left: 25px;
+      margin-right: 25px
+    }
+  }
+
+  @media only screen and (min-width: 1190px) {
+    #page-content .single-villa.availability-calendar table:nth-child(3n) {
+      margin-left: 35px;
+      margin-right: 35px
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    .multi-villa.availability-calendar table tbody td.villa {
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      -moz-transition: all 0.3s ease-in-out 0s;
+      -o-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s
+    }
+  }
+
+  .availability-calendar table td a {
+    color: #0d6f3e;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+  }

@@ -1,0 +1,92 @@
+@media(max-width: 1199.98px){
+	.heading p{
+		width: 80%;
+	}
+	.heading h2{
+		font-size: 40px;
+	}
+}
+@media(max-width: 991.98px){
+	header{
+		padding: 10px 0px;
+	}
+	.carousel-caption h5{
+		font-size: 27px;
+	}
+	.navbar-light .navbar-toggler{
+		background: #fff;
+		padding: 0px 5px;
+	}
+	.navbar-collapse {
+	    position: absolute;
+	    top: 50px;
+	    z-index: 10;
+	    background: #051f1e;
+	    left: 20px;
+	    right: 20px;
+	    border-radius: 0px 0px 10px 10px;
+	    padding: 0px 15px;
+	}
+	.cardBox h2{
+		font-size: 22px;
+	}
+	.client-info p {
+	    font-size: 14px;
+	}
+	.heading h2 {
+	    font-size: 27px;
+	}
+	.heading p {
+	    width: 100%;
+	    font-size: 16px;
+	}
+	.boxone{
+		padding: 10px;
+		font-size: 14px;
+	}
+	.boxone img{
+		height: 180px;
+	}
+	.Drones-info-content h4 a{
+		font-size: 20px;
+	}
+}
+@media(max-width: 767.98px){
+	.navbar-light .navbar-nav .nav-link{
+		padding: 10px 0px;
+	}
+	.carousel-caption h5 {
+	    font-size: 22px;
+	}
+	.carousel-item img{
+		height: 350px;
+	}
+	.cardBox {
+	    position: initial;
+	    margin: 20px 0px;
+	    border-radius: 35px;
+	}
+	.heading h2 {
+	    font-size: 22px;
+	}
+	.boxone img {
+	    height: 130px;
+	}
+	.Application-COntent p, .Application-COntent ul li{
+		font-size: 16px;
+	}
+}
+@media(max-width: 575.98px){
+	.steps {
+	    flex-direction: column;
+	}
+	.boxone{
+		width: 100%;
+	}
+	.boxone img {
+	    height: 190px;
+	}
+	.steps i {
+	    transform: rotate(90deg);
+	}
+}
